@@ -46,7 +46,7 @@ from HTML.
 */
 
 const makeCategoryElement = (category, data) => {
-    main.innerHTML += `
+    main.innerHTML += ` 
     <div class="movie-list">
         <button class="pre-btn"><img src="img/pre.png" alt=""></button>
         <h1 class="movie-category">${category.split("_").join(" ")}</h1>

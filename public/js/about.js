@@ -64,7 +64,7 @@ fetch(`${movie_detail_http}${movie_id}/videos?` + new URLSearchParams({
     let maxClips = (data.results.length > 4) ? 4 : data.results.length;
 
     for(let i = 0; i < maxClips; i++){
-        trailerContainer.innerHTML += `
+        trailerContainer.innerHTML += ` 
         <iframe src="https://youtube.com/embed/${data.results[i].key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         `;
     }
